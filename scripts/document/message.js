@@ -35,7 +35,7 @@ export class WnGChatMessage extends WarhammerChatMessage
         let canShift = li => {
             let msg = game.messages.get(li.dataset.messageId)
             let test = msg.system.test
-            let selected = Array.from(li.querySelectorAll(".selected")).map(i => Number(i.dataset.index))
+            let selected = Array.from(li.querySelectorAll(".selected:not(.shifted)")).map(i => Number(i.dataset.index))
 
             // If all selected dice are shiftable and number of selected <= shifts possible
             return test && (msg.isAuthor || msg.isOwner) && selected.length && test.isShiftable && test.result.dice.filter(i => selected.includes(i.index)).every(i => i.canShift) && selected.length <= test.result.shiftsPossible

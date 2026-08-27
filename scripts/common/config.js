@@ -752,17 +752,12 @@ WNG.traitEffects = {
                 },
                 scriptData : [
                     {
-                        label: "Shift Option",
-                        trigger: "preRollWeaponTest",
-                        script: 'args.addShiftOption("rending", "Rending", "R")'
-                    },
-                    {
                         label: "Add AP",
                         trigger: "preApplyDamage",
                         script: `
-                        if (args.test.testData.shifted.rending)
+                        if (args.test.result.shifted.length > 0)
                         {
-                            args.modifiers.ap.push({label : this.effect.name, value : (parseInt(this.item.traitList.rending.rating) || 1) * args.test.testData.shifted.rending.dice.length})
+                            args.modifiers.ap.push({label : this.effect.name, value : (parseInt(this.item.traitList.rending.rating) || 1)})
                         }`
                     }
                 ]
