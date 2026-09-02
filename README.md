@@ -1,5 +1,5 @@
-# Wrath & Glory
-The **official** system for playing Warhammer 40k: Wrath & Glory on [Foundry VTT](https://foundryvtt.com/). Created by Moo Man.
+# Wrath & Glory Revised
+A homebrew variant of the Warhammer 40k: Wrath & Glory on [Foundry VTT](https://foundryvtt.com/) **official** system.
 
 ![](https://img.shields.io/github/v/release/moo-man/WrathAndGlory-FoundryVTT?label=Latest%20Version)
 ![](https://img.shields.io/github/downloads/moo-man/WrathAndGlory-FoundryVTT/latest/wrath-and-glory.zip?label=Downloads%20%28Latest%20Version%29)
@@ -11,26 +11,6 @@ The **official** system for playing Warhammer 40k: Wrath & Glory on [Foundry VTT
 1. Go to the setup page and choose **Game Systems**.
 2. Click the **Install System** button, find Wrath & Glory in the search feature, and click install
 3. Create a Game World using the Wrath & Glory system.
-
-## Official Modules
-- [Wrath & Glory - Core Module](https://foundryvtt.com/packages/wng-core) - Provides all the content from the Core Rulebook within Foundry, from rules and lore to weapons and spells, already created for you to begin adventuring in the Gilead System!
-- [Wrath & Glory - Forsaken System](https://foundryvtt.com/packages/wng-forsaken) - Expanded lore on the worlds of the Gilead System and its factions and patrons, as well as new playable species, archetypes, and optional rules for downtime activities and endeavours
-- [Wrath & Glory - Litanies of the Lost](https://foundryvtt.com/packages/wng-litanies) - Four exciting scenarios suitable for Wrath & Glory characters of Tiers 1 and 2
-- [Wrath & Glory - Redacted Records I](https://foundryvtt.com/packages/wng-records1) - This magazine-style collection of articles uncovers numerous secrets of the Gilead System, opening up new settings and antagonists for players to explore and confront, and new character options to increase Agents’ chance of surviving these new and perilous situations.
-- [Wrath & Glory - Church of Steel](https://foundryvtt.com/packages/wng-cos) - Unveil the mysteries of the Machine Spirit and unleash the massive power of machines of war with this comprehensive guide to vehicles.
-- [Wrath & Glory - Threat Assessment: Xenos](https://foundryvtt.com/packages/wng-xenos) - Contains a mass of new alien threats to challenge Agents of any Tier, and is the perfect companion to any Warhammer 40,000 Wrath & Glory campaign.
-- [Wrath & Glory - Redacted Records II](https://foundryvtt.com/packages/wng-records2) - An invaluable resource suffused with scriptures of righteous destruction and technological liturgies to empower your games with an abundance of new ways to play.
-- [Wrath & Glory - Darktide: Extraction](https://foundryvtt.com/packages/wng-darktide) - Explore the setting of Warhammer 40,000: Darktide as Inquisitor Grendyl dispatches you to a lost region of Hive Tertium. Play Darktide? Bring your Darktide character to life by importing them directly into the game!
-- [Wrath & Glory - Vow of Absolution](https://foundryvtt.com/packages/wng-voa) - Provides a detailed look at The Absolvers and playing an Astartes warrior in Wrath & Glory, introducing new Tier 5 Astartes Archetypes, exciting previously unexplored locations and dives into the mysteries at the centre of the ancient secrets of the Chapter
-- [Wrath & Glory - Aeldari: Inheritance of Embers](https://foundryvtt.com/packages/wng-aeldari) - The ultimate Wrath & Glory module for Aeldari players and Gamemasters alike. This expansive supplement is the perfect starting point for an entirely Aeldari-focused adventure or to expand the enigmatic xenos’ role in an existing campaign.
-- [Wrath & Glory - Threat Assessment: Daemons & Heretics](https://foundryvtt.com/packages/wng-daemons) - Bring the forces of the Ruinous Powers to Warhammer 40,000 Roleplay: Wrath & Glory with this packed bestiary dedicated to those in service of the Dark Gods of Chaos!
-
-
-## Special Thanks
-- Cubicle 7
-- FatShark
-- Perfectro (original system creator)
-- Thul (Features, testing and suggestions)
 
 ## Environment Setup
 
@@ -55,12 +35,6 @@ This will build the project into the location specified by the path property in 
 ## Related Websites
 - [Foundry Virtual Tabletop](https://foundryvtt.com)
 - [Warhammer 40k: Wrath & Glory](https://www.cubicle7games.com/product-category/warhammer-40k/)
-
-## Have an issue?
-Use the Bug Reporter (found in the settings sidebar tab within Foundry) to report any bugs or issues. Alternatively, you can submit an issue your self on the [issues page](https://github.com/moo-man/WrathAndGlory-FoundryVTT/issues).
-
-## Join the community
-If you want to be more involved in development, test latest features, or provide more feedback, you can always join my [Moohammer Discord Server](https://discord.gg/GrMcdeDHh8). Alternatively, I'm very active on the [Foundry Discord Server](https://discord.gg/foundryvtt), just stop by the `#warhammer` channel!
 
 ## Licence
 [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/)
