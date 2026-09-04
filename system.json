@@ -19,9 +19,9 @@
       "name" : "ShadowMHP"
     }
   ],
-  "scripts": ["./wrath-and-glory.js"],
+  "scripts": ["./wrath-and-glory-revised.js"],
   "esmodules": [],
-  "styles": ["./wrath-and-glory.css"],
+  "styles": ["./wrath-and-glory-revised.css"],
   "packs": [],
   "languages": [
     {
