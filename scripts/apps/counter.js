@@ -27,9 +27,9 @@ export default class RuinGloryCounter extends HandlebarsApplicationMixin(Applica
      */
     async _prepareContext(options) {
       const context = await super._prepareContext(options);
-      context.glory = game.settings.get('wrath-and-glory', 'glory');
-      context.ruin = game.settings.get('wrath-and-glory', 'ruin');
-      context.canEdit = game.user.isGM || game.settings.get('wrath-and-glory', 'playerCounterEdit');
+      context.glory = game.settings.get('wrath-and-glory-revised', 'glory');
+      context.ruin = game.settings.get('wrath-and-glory-revised', 'ruin');
+      context.canEdit = game.user.isGM || game.settings.get('wrath-and-glory-revised', 'playerCounterEdit');
   
       return context;
     }
@@ -160,7 +160,7 @@ export default class RuinGloryCounter extends HandlebarsApplicationMixin(Applica
       }
       else
       {
-        await game.settings.set('wrath-and-glory', type, value);
+        await game.settings.set('wrath-and-glory-revised', type, value);
       }
   
       return value
@@ -172,14 +172,14 @@ export default class RuinGloryCounter extends HandlebarsApplicationMixin(Applica
      * @param type  Type of counter, "glory" or "ruin"
      */
     static async changeCounter(diff, type) {
-      let value = game.settings.get('wrath-and-glory', type);
+      let value = game.settings.get('wrath-and-glory-revised', type);
       return await RuinGloryCounter.setCounter(value + diff, type)
     }
 
 
     static getValue(type)
     {
-        return game.settings.get('wrath-and-glory', type);
+        return game.settings.get('wrath-and-glory-revised', type);
     }
 
     get glory()

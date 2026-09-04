@@ -456,7 +456,7 @@ export class WrathAndGloryActor extends WarhammerActor {
         if (ap && !ignoreResilience)
         {
             let resilienceReduction = ap
-            if (game.settings.get('wrath-and-glory', 'advancedArmour') && this.type != "vehicle")
+            if (game.settings.get('wrath-and-glory-revised', 'advancedArmour') && this.type != "vehicle")
             {
                 resilienceReduction = Math.min(ap, resilience.armour || 0)
             }

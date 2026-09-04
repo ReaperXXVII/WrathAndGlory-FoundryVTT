@@ -11,7 +11,7 @@ export default function () {
     type: String,
   });
 
-  game.settings.register('wrath-and-glory', 'initiativeRollOption', {
+  game.settings.register('wrath-and-glory-revised', 'initiativeRollOption', {
     name: 'I Wanna Roll!',
     hint: 'Determine Initiative by rolling as described on page 177 in the Core Rulebook',
     scope: 'world',
@@ -20,7 +20,7 @@ export default function () {
     type: Boolean,
   });
 
-  game.settings.register('wrath-and-glory', 'playerCounterEdit', {
+  game.settings.register('wrath-and-glory-revised', 'playerCounterEdit', {
     name: 'Allow Players To Edit Glory',
     hint: 'Players will be able to change Glory counter values manually.',
     scope: 'world',
@@ -29,7 +29,7 @@ export default function () {
     type: Boolean,
   });
 
-  game.settings.register('wrath-and-glory', 'glory', {
+  game.settings.register('wrath-and-glory-revised', 'glory', {
     name: 'Glory',
     scope: 'world',
     config: false,
@@ -38,7 +38,7 @@ export default function () {
   });
 
 
-  game.settings.register('wrath-and-glory', 'ruinMax', {
+  game.settings.register('wrath-and-glory-revised', 'ruinMax', {
     name: 'Maximum Ruin',
     hint: 'Caps the amount of Ruin in the counter.',
     scope: 'world',
@@ -47,7 +47,7 @@ export default function () {
     type: Number,
   });
 
-  game.settings.register('wrath-and-glory', 'gloryMax', {
+  game.settings.register('wrath-and-glory-revised', 'gloryMax', {
     name: 'Maximum Glory',
     hint: 'Caps the amount of Glory in the counter.',
     scope: 'world',
@@ -57,7 +57,7 @@ export default function () {
   });
 
 
-  game.settings.register('wrath-and-glory', 'ruin', {
+  game.settings.register('wrath-and-glory-revised', 'ruin', {
     name: 'Ruin',
     scope: 'world',
     config: false,
@@ -65,7 +65,7 @@ export default function () {
     type: Number,
   });
 
-  game.settings.register('wrath-and-glory', 'tier', {
+  game.settings.register('wrath-and-glory-revised', 'tier', {
     name: 'Tier',
     hint: "Current Game Tier",
     scope: 'world',
@@ -74,7 +74,7 @@ export default function () {
     type: Number,
   });
 
-  game.settings.register('wrath-and-glory', 'counterPosition', {
+  game.settings.register('wrath-and-glory-revised', 'counterPosition', {
     name: 'Counter Position',
     scope: 'client',
     config: false,
@@ -83,7 +83,7 @@ export default function () {
   });
 
 
-  game.settings.register('wrath-and-glory', 'bugReportName', {
+  game.settings.register('wrath-and-glory-revised', 'bugReportName', {
     name: 'Bug Report Name',
     scope: 'world',
     config: false,
@@ -91,7 +91,7 @@ export default function () {
     type: String,
   });
 
-  game.settings.register('wrath-and-glory', 'advancedArmour', {
+  game.settings.register('wrath-and-glory-revised', 'advancedArmour', {
     name: 'Advanced Armour',
     hint: 'Handle Armour and Armour Penetration as described on page 232.',
     scope: 'world',
