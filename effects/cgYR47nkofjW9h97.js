@@ -12,6 +12,6 @@ if (abilities.length)
   { 
     this.script.notification(`Disabling ${effects.map(i => i.name).join(", ")}`);
     effects.forEach(e => e.update({disabled: true}));
-    this.effect.updateSource({"flags.wrath-and-glory.ids" : effects.map(i => i.uuid)});
+    this.effect.updateSource({"flags.wrath-and-glory-revised.ids" : effects.map(i => i.uuid)});
   }
 }

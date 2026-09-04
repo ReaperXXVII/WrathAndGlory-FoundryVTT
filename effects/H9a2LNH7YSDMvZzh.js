@@ -12,5 +12,5 @@ let skills = ["awareness",
         let choice = await ItemDialog.create(skills, 1, {title : this.effect.name, text : "Select Skill"})
     if (choice[0])
     {
-        this.effect.updateSource({name : `${this.item.name} [${choice[0].name}]`, "flags.wrath-and-glory.skill" : choice[0].id});
+        this.effect.updateSource({name : `${this.item.name} [${choice[0].name}]`, "flags.wrath-and-glory-revised.skill" : choice[0].id});
     }

@@ -2,7 +2,7 @@
   "name": "wrathandglory-foundryvtt",
   "version": "1.0.0",
   "description": "An **unofficial** system for playing Warhammer 40k: Wrath & Glory on [Foundry VTT](https://foundryvtt.com/). Created by RickdMort, Rexxer and ShadowMHP.",
-  "main": "wrath-and-glory.js",
+  "main": "wrath-and-glory-revised.js",
   "scripts": {
     "build": "node scriptPacker.js&& cross-env NODE_ENV=development rollup --config rollup.config.mjs --watch",
     "release": "node scriptPacker.js&& cross-env NODE_ENV=production rollup --config rollup.config.mjs"

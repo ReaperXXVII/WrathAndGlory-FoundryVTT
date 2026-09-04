@@ -8,5 +8,5 @@ else
 {
   let choice = await ItemDialog.create(armour, 1, {title: this.effect.name, text: "Choose Armour to apply to"})
 
-  await this.item.update({name: this.item.setSpecifier(choice[0].name), "flags.wrath-and-glory.applied": choice[0].id})
+  await this.item.update({name: this.item.setSpecifier(choice[0].name), "flags.wrath-and-glory-revised.applied": choice[0].id})
 }

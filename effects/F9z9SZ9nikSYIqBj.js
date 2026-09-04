@@ -19,6 +19,6 @@ if (this.item.specifier == "Skill")
     if (choice[0])
     {
 	this.item.updateSource({name : this.item.name.replace("Skill", choice[0].name)})
-        this.effect.updateSource({name : `${this.item.name}`, "flags.wrath-and-glory.skill" : choice[0].id});
+        this.effect.updateSource({name : `${this.item.name}`, "flags.wrath-and-glory-revised.skill" : choice[0].id});
     }
 }

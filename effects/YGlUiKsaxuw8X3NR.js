@@ -18,6 +18,6 @@ if (!this.item.specifier)
     if (choice[0])
     {
     	this.item.updateSource({"system.test" : {type : "skill", specification : choice[0].id, dn: 3}})
-        this.effect.updateSource({name : this.effect.setSpecifier(choice[0].name), "flags.wrath-and-glory.skill" : choice[0].id});
+        this.effect.updateSource({name : this.effect.setSpecifier(choice[0].name), "flags.wrath-and-glory-revised.skill" : choice[0].id});
     }
 }

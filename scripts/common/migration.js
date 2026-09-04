@@ -468,7 +468,7 @@ export default class Migration {
                 foundry.utils.setProperty(data, "system.transferData.documentType", "Item");
 
             }
-            foundry.utils.setProperty(data, "flags.wrath-and-glory.migrated", true);
+            foundry.utils.setProperty(data, "flags.wrath-and-glory-revised.migrated", true);
         }
 
         if (document.parent.documentName == "Item" && document.parent.type == "psychicPower" && data.system?.transferData?.type == "document")
@@ -480,7 +480,7 @@ export default class Migration {
         {
             let scriptData = []
 
-            let changeConditon = foundry.utils.getProperty(data, "flags.wrath-and-glory.changeCondition");
+            let changeConditon = foundry.utils.getProperty(data, "flags.wrath-and-glory-revised.changeCondition");
             for (let i in changeConditon) {
                 if (changes[i]?.mode >= 6) {
                     let script;

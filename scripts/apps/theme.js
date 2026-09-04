@@ -60,7 +60,7 @@ export default class WnGThemeConfig extends HandlebarsApplicationMixin(Applicati
     if (!WnGThemeConfig.#localized) {
       foundry.helpers.Localization.localizeDataModel({ schema: WnGThemeConfig.#schema }, {
         prefixes: ["WH.Theme"],
-          prefixPath: "wrath-and-glory.theme."
+          prefixPath: "wrath-and-glory-revised.theme."
       });
       WnGThemeConfig.#localized = true;
     }

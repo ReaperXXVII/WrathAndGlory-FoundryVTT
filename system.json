@@ -95,7 +95,7 @@
   "url": "https://github.com/ReaperXXVII/WrathAndGlory-FoundryVTT",
   "socket": true,
   "manifest": "https://github.com/ReaperXXVII/WrathAndGlory-FoundryVTT/releases/latest/download/system.json",
-  "download": "https://github.com/ReaperXXVII/WrathAndGlory-FoundryVTT/releases/download/@VERSION/wrath-and-glory.zip",
+  "download": "https://github.com/ReaperXXVII/WrathAndGlory-FoundryVTT/releases/download/@VERSION/wrath-and-glory-revised.zip",
   "license": "LICENSE.txt"
 }
 

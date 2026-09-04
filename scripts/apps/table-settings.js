@@ -4,7 +4,7 @@ export default class TableSettings extends HandlebarsApplicationMixin(Applicatio
         tag: "form",
         classes: ["wrath-and-glory-revised","warhammer", "table-settings"],
         window: {
-            title: "wrath-and-glory.TableSettings",
+            title: "wrath-and-glory-revised.TableSettings",
             contentClasses : ["standard-form"],
             resizable : true,
         },
@@ -43,7 +43,7 @@ export default class TableSettings extends HandlebarsApplicationMixin(Applicatio
 
     static get schema()
     {
-        Hooks.call("wrath-and-glory.tableSettingSchema", this.#schema)
+        Hooks.call("wrath-and-glory-revised.tableSettingSchema", this.#schema)
         return this.#schema
     }
 

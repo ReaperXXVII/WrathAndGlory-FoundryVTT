@@ -203,7 +203,7 @@ export class WrathAndGloryCombatant extends Combatant {
             this.updateSource({"defeated" : true})
         }
         // "pending" , "complete", "current", "next"
-        this.updateSource({"flags.wrath-and-glory.combatStatus" : "pending", "turn" : null})
+        this.updateSource({"flags.wrath-and-glory-revised.combatStatus" : "pending", "turn" : null})
     }
 
 
@@ -232,28 +232,28 @@ export class WrathAndGloryCombatant extends Combatant {
     setCurrent() 
     {
         let data = this.toObject()
-        foundry.utils.setProperty(data, "flags.wrath-and-glory.combatStatus", "current")
+        foundry.utils.setProperty(data, "flags.wrath-and-glory-revised.combatStatus", "current")
         return data
     }
 
     setPending()
     {
         let data = this.toObject()
-        foundry.utils.setProperty(data, "flags.wrath-and-glory.combatStatus", "pending")
+        foundry.utils.setProperty(data, "flags.wrath-and-glory-revised.combatStatus", "pending")
         return data
     }
 
     setNext()
     {
         let data = this.toObject()
-        foundry.utils.setProperty(data, "flags.wrath-and-glory.combatStatus", "next")
+        foundry.utils.setProperty(data, "flags.wrath-and-glory-revised.combatStatus", "next")
         return data
     }
 
     setComplete()
     {
         let data = this.toObject()
-        foundry.utils.setProperty(data, "flags.wrath-and-glory.combatStatus", "complete")
+        foundry.utils.setProperty(data, "flags.wrath-and-glory-revised.combatStatus", "complete")
         data.active = false;
         return data
     }

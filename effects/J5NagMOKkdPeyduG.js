@@ -4,5 +4,5 @@ let choice = await ItemDialog.create(effects, 1, {title : this.effect.name, text
 
 if (choice[0])
 {
-  this.item.update({"flags.wrath-and-glory.protocol" : choice[0].id})
+  this.item.update({"flags.wrath-and-glory-revised.protocol" : choice[0].id})
 }
