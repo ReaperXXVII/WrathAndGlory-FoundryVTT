@@ -1,5 +1,5 @@
 let test = await this.actor.setupAttributeTest("willpower", {appendTitle: ` - ${this.effect.name}`, skipTargets: true});
-let opposed = this.effect.getFlag("wrath-and-glory", "opposed")
+let opposed = this.effect.getFlag("wrath-and-glory-revised", "opposed")
 
 let diff = opposed - test.result.success;
 

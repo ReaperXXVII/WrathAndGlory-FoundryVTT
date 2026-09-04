@@ -5,7 +5,7 @@ export default function () {
 
     game.socket.on("system.wrath-and-glory", async data => {
       if (data.type == "setCounter" && game.user.isGM) {
-        game.settings.set("wrath-and-glory", data.payload.type, data.payload.value)
+        game.settings.set("wrath-and-glory-revised", data.payload.type, data.payload.value)
       }
     })
   })

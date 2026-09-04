@@ -1,7 +1,7 @@
 export default class ActorConfigForm extends WHFormApplication
 {
     static DEFAULT_OPTIONS = {
-        classes : ["wrath-and-glory", "actor-config"],
+        classes : ["wrath-and-glory-revised", "actor-config"],
         window : {
             title : "Configure Actor"
         },

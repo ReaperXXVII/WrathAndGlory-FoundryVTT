@@ -1,5 +1,5 @@
 let test = await this.actor.setupSkillTest("psychicMastery", {appendTitle: ` - ${this.effect.name}`, skipTargets: true});
-//let opposed = this.effect.getFlag("wrath-and-glory", "opposed")
+//let opposed = this.effect.getFlag("wrath-and-glory-revised", "opposed")
 
 if (test.result.success >= this.effect.sourceTest.result.success)
 {

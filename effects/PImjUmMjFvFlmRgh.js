@@ -1,1 +1,1 @@
-args.fields.ed.value += (4 + (this.effect.getFlag("wrath-and-glory", "extra") ? 1 : 0));
+args.fields.ed.value += (4 + (this.effect.getFlag("wrath-and-glory-revised", "extra") ? 1 : 0));

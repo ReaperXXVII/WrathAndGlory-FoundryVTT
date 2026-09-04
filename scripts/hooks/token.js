@@ -5,7 +5,7 @@ export default function() {
         let actor = token.actor;
         token.passengers?.forEach(i => i.destroy());
         delete token.passengers;
-        if (actor && actor.type == "vehicle" && actor.system.complement.list.length > 0 && !actor.getFlag("wrath-and-glory", "hidePassengers"))
+        if (actor && actor.type == "vehicle" && actor.system.complement.list.length > 0 && !actor.getFlag("wrath-and-glory-revised", "hidePassengers"))
         {
             if (hover)
             {

@@ -355,7 +355,7 @@ WNG.copyrightText = `
 WNG.dicePath = "systems/wrath-and-glory-revised/assets/image/"
 
 WNG.premiumModules = {
-    "wrath-and-glory" : "Wrath & Glory System",
+    "wrath-and-glory-revised" : "Wrath & Glory System",
     "wng-core" : "Core Rulebook",
     "wng-forsaken" : "Forsaken System Player's Guide",
     "wng-litanies" : "Litanies of the Lost",

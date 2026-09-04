@@ -2,7 +2,7 @@ export default class WnGTables
 {
     static async rollTable(key, formula, {modifier=0, showRoll=true, showResult=true, chatData={}, actor}={})
     {
-        let id = game.settings.get("wrath-and-glory", "tableSettings")[key];
+        let id = game.settings.get("wrath-and-glory-revised", "tableSettings")[key];
         let table = game.tables.get(id);
         
         if (!table && !formula)

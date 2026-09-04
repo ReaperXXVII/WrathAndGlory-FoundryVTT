@@ -3,7 +3,7 @@ export default class RuinGloryCounter extends HandlebarsApplicationMixin(Applica
 
     static DEFAULT_OPTIONS = {
       id: "counter",
-      classes : ["warhammer", "wrath-and-glory"],
+      classes : ["warhammer", "wrath-and-glory-revised"],
       position: {
         width: 240,
         height: 85
@@ -40,7 +40,7 @@ export default class RuinGloryCounter extends HandlebarsApplicationMixin(Applica
 
     render(options={})
     {
-      let userPosition = game.settings.get("wrath-and-glory", "counterPosition")
+      let userPosition = game.settings.get("wrath-and-glory-revised", "counterPosition")
       options.position = userPosition
 
       if (options.position.hide)
@@ -58,7 +58,7 @@ export default class RuinGloryCounter extends HandlebarsApplicationMixin(Applica
 
     setPosition(...args) {
       super.setPosition(...args);
-      game.settings.set("wrath-and-glory", "counterPosition", this.position)
+      game.settings.set("wrath-and-glory-revised", "counterPosition", this.position)
     }
 
 
@@ -145,7 +145,7 @@ export default class RuinGloryCounter extends HandlebarsApplicationMixin(Applica
      */
     static async setCounter(value, type) {
       value = Math.round(value);
-      let max = game.settings.get("wrath-and-glory", `${type}Max`);
+      let max = game.settings.get("wrath-and-glory-revised", `${type}Max`);
 
       if (max)
       {
@@ -200,9 +200,9 @@ export default class RuinGloryCounter extends HandlebarsApplicationMixin(Applica
     button.innerHTML = `<button class='control ui-control layer icon fa-solid fa-input-numeric' data-tooltip="${game.i18n.localize("CONTROLS.WNGCounterToggle")}"></button>`
     button.addEventListener("click", ev => {
       // Retain show/hide on refresh by storing in settings
-      position = game.settings.get("wrath-and-glory", "counterPosition")
+      position = game.settings.get("wrath-and-glory-revised", "counterPosition")
       position.hide = game.counter.rendered;
-      game.settings.set("wrath-and-glory", "counterPosition", position);
+      game.settings.set("wrath-and-glory-revised", "counterPosition", position);
       
       game.counter.rendered ? game.counter.close({fromControls : true}) : game.counter.render({force : true});
     })

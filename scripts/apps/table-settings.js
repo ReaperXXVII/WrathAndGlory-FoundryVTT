@@ -2,7 +2,7 @@ export default class TableSettings extends HandlebarsApplicationMixin(Applicatio
 {
     static DEFAULT_OPTIONS = {
         tag: "form",
-        classes: ["wrath-and-glory","warhammer", "table-settings"],
+        classes: ["wrath-and-glory-revised","warhammer", "table-settings"],
         window: {
             title: "wrath-and-glory.TableSettings",
             contentClasses : ["standard-form"],
@@ -49,7 +49,7 @@ export default class TableSettings extends HandlebarsApplicationMixin(Applicatio
 
     async _prepareContext(options) {
         let context = await super._prepareContext(options);
-        context.settings = game.settings.get("wrath-and-glory", "tableSettings");
+        context.settings = game.settings.get("wrath-and-glory-revised", "tableSettings");
         context.schema = this.constructor.schema;
         context.tables = game.tables.contents.reduce((tables, t) => {tables[t._id] = t.name; return tables}, {});
         context.buttons = [
@@ -65,7 +65,7 @@ export default class TableSettings extends HandlebarsApplicationMixin(Applicatio
 
 
     static async submit(event, form, formData) {
-        return game.settings.set("wrath-and-glory", "tableSettings", formData.object)
+        return game.settings.set("wrath-and-glory-revised", "tableSettings", formData.object)
     }
 
     static async _onReset(ev, target)
@@ -77,7 +77,7 @@ export default class TableSettings extends HandlebarsApplicationMixin(Applicatio
             defaults[setting] = this.constructor.schema.fields[setting].initial;
         }
 
-        await game.settings.set("wrath-and-glory", "tableSettings", defaults)
+        await game.settings.set("wrath-and-glory-revised", "tableSettings", defaults)
         this.render(true);
     }
 

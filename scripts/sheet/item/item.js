@@ -7,7 +7,7 @@ export default class WnGItemSheet extends WarhammerItemSheetV2
     static type=""
   
     static DEFAULT_OPTIONS = {
-      classes: ["wrath-and-glory"],
+      classes: ["wrath-and-glory-revised"],
       defaultTab : "description",
       position : {
         width: 700,

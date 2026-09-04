@@ -1,7 +1,7 @@
 export default class ItemTraits extends WHFormApplication
 {
     static DEFAULT_OPTIONS = {
-        classes : ["wrath-and-glory", "item-traits"],
+        classes : ["wrath-and-glory-revised", "item-traits"],
         window : {
             title : "Item Traits",
             resizable: true

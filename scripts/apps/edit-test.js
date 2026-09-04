@@ -1,7 +1,7 @@
 export default class EditTestForm extends WHFormApplication {
 
     static DEFAULT_OPTIONS = {
-        classes : ["wrath-and-glory", "edit-test"],
+        classes : ["wrath-and-glory-revised", "edit-test"],
         tag: "form",
         window : {
             title : "BUTTON.EDIT",

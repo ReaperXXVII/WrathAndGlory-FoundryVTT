@@ -210,22 +210,22 @@ export class WrathAndGloryCombatant extends Combatant {
 
     get isCurrent() 
     {
-        return this.getFlag("wrath-and-glory", "combatStatus") == "current" && !this.isDefeated
+        return this.getFlag("wrath-and-glory-revised", "combatStatus") == "current" && !this.isDefeated
     }
 
     get isPending()
     {
-        return this.getFlag("wrath-and-glory", "combatStatus") == "pending" && !this.isDefeated
+        return this.getFlag("wrath-and-glory-revised", "combatStatus") == "pending" && !this.isDefeated
     }
 
     get isComplete()
     {
-        return this.getFlag("wrath-and-glory", "combatStatus") == "complete" && !this.isDefeated
+        return this.getFlag("wrath-and-glory-revised", "combatStatus") == "complete" && !this.isDefeated
     }
 
     get isNext()
     {
-        return this.getFlag("wrath-and-glory", "combatStatus") == "next" && !this.isDefeated
+        return this.getFlag("wrath-and-glory-revised", "combatStatus") == "next" && !this.isDefeated
     }
 
     

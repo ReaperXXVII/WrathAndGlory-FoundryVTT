@@ -2,7 +2,7 @@ export class MobConfig extends WarhammerSheetMixinV2(HandlebarsApplicationMixin(
 {
     static DEFAULT_OPTIONS = {
         tag : "form",
-        classes: ["wrath-and-glory", "mob-config", "warhammer"],
+        classes: ["wrath-and-glory-revised", "mob-config", "warhammer"],
         window : {
         },
         position: {

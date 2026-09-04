@@ -103,7 +103,7 @@ export default class Migration {
         }
         if (updateVersion)
         {
-            game.settings.set("wrath-and-glory", "systemMigrationVersion", game.system.version)
+            game.settings.set("wrath-and-glory-revised", "systemMigrationVersion", game.system.version)
         }
     }
 
@@ -456,7 +456,7 @@ export default class Migration {
             migrateScripts = true;
         }
 
-        if (document.parent.documentName == "Item" && !document.getFlag("wrath-and-glory", "migrated"))
+        if (document.parent.documentName == "Item" && !document.getFlag("wrath-and-glory-revised", "migrated"))
         {
             if (data.transfer == false && document.parent.type != "ammo")
             {
@@ -580,7 +580,7 @@ export default class Migration {
     
     static shouldMigrate()
     {
-        let systemMigrationVersion = game.settings.get("wrath-and-glory", "systemMigrationVersion")
+        let systemMigrationVersion = game.settings.get("wrath-and-glory-revised", "systemMigrationVersion")
 
         return foundry.utils.isNewerVersion(this.MIGRATION_VERSION, systemMigrationVersion);
     }
@@ -620,10 +620,10 @@ Hooks.on("ready", () =>
                 <li><p>Module Initialization has been centralized in the System settings, check the wiki link above!</p></li>
             </ul>`
         })
-        game.settings.set("wrath-and-glory", "systemMigrationVersion", game.system.version)
+        game.settings.set("wrath-and-glory-revised", "systemMigrationVersion", game.system.version)
 
         //  If setting is before 6.0.0, migrate, otherwise no need
-        if (foundry.utils.isNewerVersion("6.0.0", game.settings.get("wrath-and-glory", "systemMigrationVersion")))
+        if (foundry.utils.isNewerVersion("6.0.0", game.settings.get("wrath-and-glory-revised", "systemMigrationVersion")))
         {
             game.wng.migration.migrateWorld(true, true);
         }

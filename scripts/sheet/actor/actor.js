@@ -3,7 +3,7 @@ import ActorConfigForm from "../../apps/actor-configure";
 export default class WnGActorSheet extends WarhammerActorSheetV2
 {
     static DEFAULT_OPTIONS = {
-        classes: ["wrath-and-glory"],
+        classes: ["wrath-and-glory-revised"],
         window : {
           controls : [
             {

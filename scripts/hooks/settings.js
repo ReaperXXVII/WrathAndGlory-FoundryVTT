@@ -2,7 +2,7 @@ import TableSettings from "../apps/table-settings";
 import WnGThemeConfig from "../apps/theme";
 
 export default function () {
-  game.settings.register("wrath-and-glory", "systemMigrationVersion", {
+  game.settings.register("wrath-and-glory-revised", "systemMigrationVersion", {
     name: "System Migration Version",
     hint: "Used to automatically upgrade worlds data when the system is upgraded.",
     scope: "world",
@@ -101,7 +101,7 @@ export default function () {
   });
 
   
-  game.settings.register("wrath-and-glory", "postedIssues", {
+  game.settings.register("wrath-and-glory-revised", "postedIssues", {
     name: "Posted Issues",
     scope: "world",
     config: false,
@@ -109,7 +109,7 @@ export default function () {
     type: Array
   });
 
-  game.settings.registerMenu("wrath-and-glory", "tableSettingsMenu", {
+  game.settings.registerMenu("wrath-and-glory-revised", "tableSettingsMenu", {
     name : game.i18n.localize("SETTINGS.TableSettings"),
     label : game.i18n.localize("SETTINGS.TableConfigure"),
     hint : game.i18n.localize("SETTINGS.TableSettingsHint"),
@@ -118,14 +118,14 @@ export default function () {
     restricted : true
 })  ;
 
-game.settings.register("wrath-and-glory", "tableSettings", {
+game.settings.register("wrath-and-glory-revised", "tableSettings", {
     name: "SETTINGS.TableSettings",
     scope: "world",
     config: false,
     type: TableSettings.schema
 });
 
-  game.settings.registerMenu("wrath-and-glory", "themeConfig", {
+  game.settings.registerMenu("wrath-and-glory-revised", "themeConfig", {
     name: "WH.Theme.Config",
     label : "WH.Theme.ConfigButton",
     hint : "WH.Theme.ConfigHint",
@@ -135,7 +135,7 @@ game.settings.register("wrath-and-glory", "tableSettings", {
     type: WnGThemeConfig
   });
 
-  game.settings.register("wrath-and-glory", "theme", {
+  game.settings.register("wrath-and-glory-revised", "theme", {
     name: "Theme",
     scope: "client",
     config: false,

@@ -70,7 +70,7 @@ export default class WnGThemeConfig extends HandlebarsApplicationMixin(Applicati
 
   /** @override */
   async _prepareContext(options) {
-    if (options.isFirstRender) this.#setting = await game.settings.get("wrath-and-glory", "theme");
+    if (options.isFirstRender) this.#setting = await game.settings.get("wrath-and-glory-revised", "theme");
     return {
       setting: this.#setting,
       fields: WnGThemeConfig.#schema.fields,
@@ -99,7 +99,7 @@ export default class WnGThemeConfig extends HandlebarsApplicationMixin(Applicati
     this.constructor.setTheme(this.#setting);
   }
 
-  static setTheme(setting=game.settings.get("wrath-and-glory", "theme"))
+  static setTheme(setting=game.settings.get("wrath-and-glory-revised", "theme"))
   {
     if (setting.enabled)
     {
@@ -184,7 +184,7 @@ export default class WnGThemeConfig extends HandlebarsApplicationMixin(Applicati
    * @returns {GameUIConfiguration}
    */
   static #cleanFormData(formData) {
-    return WnGThemeConfig.#schema.clean(foundry.utils.expandObject(formData.object)["wrath-and-glory"].theme);
+    return WnGThemeConfig.#schema.clean(foundry.utils.expandObject(formData.object)["wrath-and-glory-revised"].theme);
   }
 
   /**
@@ -196,6 +196,6 @@ export default class WnGThemeConfig extends HandlebarsApplicationMixin(Applicati
    * @returns {Promise<void>}
    */
   static async onSubmit(event, form, formData) {
-    await game.settings.set("wrath-and-glory", "theme", this.#setting);
+    await game.settings.set("wrath-and-glory-revised", "theme", this.#setting);
   }
 }
