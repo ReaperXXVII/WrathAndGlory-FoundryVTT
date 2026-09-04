@@ -10,11 +10,11 @@ export class CommonDialog extends RollDialog {
   
   static PARTS = {
     common : {
-        template : "systems/wrath-and-glory/templates/dialog/common-roll.hbs",
+        template : "systems/wrath-and-glory-revised/templates/dialog/common-roll.hbs",
         fields: true
     },
     determination : {
-      template : "systems/wrath-and-glory/templates/dialog/determination-roll.hbs",
+      template : "systems/wrath-and-glory-revised/templates/dialog/determination-roll.hbs",
       fields: true
     },
     mode : {

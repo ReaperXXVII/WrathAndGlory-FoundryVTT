@@ -14,12 +14,12 @@ export class VehicleSheet extends WnGActorSheet {
 
 
     static PARTS = {
-        header: { scrollable: [""], template: 'systems/wrath-and-glory/templates/actor/vehicle/vehicle-header.hbs', classes: ["sheet-header"] },
+        header: { scrollable: [""], template: 'systems/wrath-and-glory-revised/templates/actor/vehicle/vehicle-header.hbs', classes: ["sheet-header"] },
         tabs: { scrollable: [""], template: 'templates/generic/tab-navigation.hbs' },
-        main: { scrollable: [""], template: 'systems/wrath-and-glory/templates/actor/vehicle/vehicle-main.hbs' },
-        effects: { scrollable: [""], template: 'systems/wrath-and-glory/templates/actor/actor-effects.hbs' },
-        gear: { scrollable: [""], template: 'systems/wrath-and-glory/templates/actor/actor-gear.hbs' },
-        notes: { scrollable: [""], template: 'systems/wrath-and-glory/templates/actor/vehicle/vehicle-notes.hbs' },
+        main: { scrollable: [""], template: 'systems/wrath-and-glory-revised/templates/actor/vehicle/vehicle-main.hbs' },
+        effects: { scrollable: [""], template: 'systems/wrath-and-glory-revised/templates/actor/actor-effects.hbs' },
+        gear: { scrollable: [""], template: 'systems/wrath-and-glory-revised/templates/actor/actor-gear.hbs' },
+        notes: { scrollable: [""], template: 'systems/wrath-and-glory-revised/templates/actor/vehicle/vehicle-notes.hbs' },
     }
 
     static TABS = {

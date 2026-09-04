@@ -9,11 +9,11 @@ export class WeaponDialog extends AttackDialog {
 
   static PARTS = {
     common : {
-        template : "systems/wrath-and-glory/templates/dialog/common-roll.hbs",
+        template : "systems/wrath-and-glory-revised/templates/dialog/common-roll.hbs",
         fields: true
     },
     attack : {
-      template : "systems/wrath-and-glory/templates/dialog/attack-roll.hbs",
+      template : "systems/wrath-and-glory-revised/templates/dialog/attack-roll.hbs",
       fields: true
     },
     mode : {

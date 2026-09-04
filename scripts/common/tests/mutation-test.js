@@ -3,7 +3,7 @@ import { WNGTest } from "./test.js"
 export default class MutationTest  extends WNGTest {
 
   get template() {
-    return "systems/wrath-and-glory/templates/chat/roll/mutation/mutation-roll.hbs"
+    return "systems/wrath-and-glory-revised/templates/chat/roll/mutation/mutation-roll.hbs"
   }
 
 

@@ -11,7 +11,7 @@ export default class AbilityRoll extends WNGTest {
   }
 
   get template() {
-    return "systems/wrath-and-glory/templates/chat/roll/ability/ability-roll.hbs"
+    return "systems/wrath-and-glory-revised/templates/chat/roll/ability/ability-roll.hbs"
   }
 
 

@@ -63,7 +63,7 @@ export class WNGTest extends WarhammerTestBase {
   }
 
   get template() {
-    return "systems/wrath-and-glory/templates/chat/roll/common/common-roll.hbs"
+    return "systems/wrath-and-glory-revised/templates/chat/roll/common/common-roll.hbs"
   }
 
   static recreate(data) {

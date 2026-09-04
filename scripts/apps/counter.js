@@ -15,7 +15,7 @@ export default class RuinGloryCounter extends HandlebarsApplicationMixin(Applica
 
     static PARTS = {
       counter: {
-          template: "systems/wrath-and-glory/templates/apps/counter.hbs"
+          template: "systems/wrath-and-glory-revised/templates/apps/counter.hbs"
         },
     };
 

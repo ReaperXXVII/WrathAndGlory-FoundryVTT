@@ -4,15 +4,15 @@ export class PowerDialog extends AttackDialog {
 
   static PARTS = {
     common : {
-        template : "systems/wrath-and-glory/templates/dialog/common-roll.hbs",
+        template : "systems/wrath-and-glory-revised/templates/dialog/common-roll.hbs",
         fields: true
     },
     attack : {
-      template : "systems/wrath-and-glory/templates/dialog/attack-roll.hbs",
+      template : "systems/wrath-and-glory-revised/templates/dialog/attack-roll.hbs",
       fields: true
     },
     power : {
-      template : "systems/wrath-and-glory/templates/dialog/power-roll.hbs",
+      template : "systems/wrath-and-glory-revised/templates/dialog/power-roll.hbs",
       fields: true
     },
     mode : {

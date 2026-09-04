@@ -73,7 +73,7 @@ export default class WnGActorSheet extends WarhammerActorSheetV2
               if (img)
               {
                   this._icon = img.src;
-                  img.src = "systems/wrath-and-glory/assets/icons/dice.svg";
+                  img.src = "systems/wrath-and-glory-revised/assets/icons/dice.svg";
               }
               })
               element.addEventListener("mouseleave", ev => {

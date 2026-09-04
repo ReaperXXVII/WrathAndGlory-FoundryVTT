@@ -16,7 +16,7 @@ export default class EditTestForm extends WHFormApplication {
 
     static PARTS = {
         form: {
-            template: "systems/wrath-and-glory/templates/apps/edit-test.hbs"
+            template: "systems/wrath-and-glory-revised/templates/apps/edit-test.hbs"
         },
         footer : {
             template : "templates/generic/form-footer.hbs"

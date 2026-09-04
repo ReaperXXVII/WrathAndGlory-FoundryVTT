@@ -30,7 +30,7 @@ export default class AbilityUse extends WNGTest {
   }
 
   get template() {
-    return "systems/wrath-and-glory/templates/chat/roll/ability/ability-use.hbs"
+    return "systems/wrath-and-glory-revised/templates/chat/roll/ability/ability-use.hbs"
   }
 
 

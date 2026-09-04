@@ -22,7 +22,7 @@ export default class WnGThemeConfig extends HandlebarsApplicationMixin(Applicati
   /** @override */
   static PARTS = {
     form: {
-      template: "systems/wrath-and-glory/templates/apps/theme-config.hbs",
+      template: "systems/wrath-and-glory-revised/templates/apps/theme-config.hbs",
       scrollable: [""]
     },
     footer: {

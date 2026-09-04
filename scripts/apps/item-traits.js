@@ -19,7 +19,7 @@ export default class ItemTraits extends WHFormApplication
 
     static PARTS = {
         form: {
-            template: "systems/wrath-and-glory/templates/apps/item-traits.hbs"
+            template: "systems/wrath-and-glory-revised/templates/apps/item-traits.hbs"
         },
         footer : {
             template : "templates/generic/form-footer.hbs"

@@ -13,7 +13,7 @@ export default class WrathAndGloryCombatTracker extends foundry.applications.sid
       template: "templates/sidebar/tabs/combat/header.hbs"
     },
     tracker: {
-      template: "systems/wrath-and-glory/templates/apps/combat-tracker.hbs"
+      template: "systems/wrath-and-glory-revised/templates/apps/combat-tracker.hbs"
     },
     footer: {
       template: "templates/sidebar/tabs/combat/footer.hbs"

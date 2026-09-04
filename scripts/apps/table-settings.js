@@ -24,7 +24,7 @@ export default class TableSettings extends HandlebarsApplicationMixin(Applicatio
     /** @override */
     static PARTS = {
         form: {
-            template: "systems/wrath-and-glory/templates/apps/table-settings.hbs",
+            template: "systems/wrath-and-glory-revised/templates/apps/table-settings.hbs",
             scrollable: [""],
             classes : ["standard-form"]
         },

@@ -10,14 +10,14 @@ export class ThreatSheet extends StandardActorSheet {
     }   
 
       static PARTS = {
-        header : {scrollable: [""], template : 'systems/wrath-and-glory/templates/actor/threat/threat-header.hbs', classes: ["sheet-header"] },
+        header : {scrollable: [""], template : 'systems/wrath-and-glory-revised/templates/actor/threat/threat-header.hbs', classes: ["sheet-header"] },
         tabs: { scrollable: [""], template: 'templates/generic/tab-navigation.hbs' },
-        stats: { scrollable: [""], template: 'systems/wrath-and-glory/templates/actor/actor-stats.hbs' },
-        combat: { scrollable: [""], template: 'systems/wrath-and-glory/templates/actor/actor-combat.hbs' },
-        abilities: { scrollable: [""], template: 'systems/wrath-and-glory/templates/actor/actor-abilities.hbs' },
-        gear: { scrollable: [""], template: 'systems/wrath-and-glory/templates/actor/actor-gear.hbs' },
-        effects: { scrollable: [""], template: 'systems/wrath-and-glory/templates/actor/actor-effects.hbs' },
-        notes: { scrollable: [""], template: 'systems/wrath-and-glory/templates/actor/threat/threat-notes.hbs' },
+        stats: { scrollable: [""], template: 'systems/wrath-and-glory-revised/templates/actor/actor-stats.hbs' },
+        combat: { scrollable: [""], template: 'systems/wrath-and-glory-revised/templates/actor/actor-combat.hbs' },
+        abilities: { scrollable: [""], template: 'systems/wrath-and-glory-revised/templates/actor/actor-abilities.hbs' },
+        gear: { scrollable: [""], template: 'systems/wrath-and-glory-revised/templates/actor/actor-gear.hbs' },
+        effects: { scrollable: [""], template: 'systems/wrath-and-glory-revised/templates/actor/actor-effects.hbs' },
+        notes: { scrollable: [""], template: 'systems/wrath-and-glory-revised/templates/actor/threat/threat-notes.hbs' },
       }
 
       static TABS = {

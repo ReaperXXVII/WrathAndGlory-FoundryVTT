@@ -50,11 +50,11 @@ export default class WnGItemSheet extends WarhammerItemSheetV2
 
       
       static PARTS = {
-        header : {scrollable: [""], template : 'systems/wrath-and-glory/templates/item/item-header.hbs', classes: ["sheet-header"] },
+        header : {scrollable: [""], template : 'systems/wrath-and-glory-revised/templates/item/item-header.hbs', classes: ["sheet-header"] },
         tabs: { scrollable: [""], template: 'templates/generic/tab-navigation.hbs' },
-        description: { scrollable: [""], template: `systems/wrath-and-glory/templates/item/types/item-description.hbs` },
-        stats: { scrollable: [""], template: `systems/wrath-and-glory/templates/item/types/${this.type}.hbs` },
-        effects: { scrollable: [""], template: 'systems/wrath-and-glory/templates/item/item-effects.hbs' },
+        description: { scrollable: [""], template: `systems/wrath-and-glory-revised/templates/item/types/item-description.hbs` },
+        stats: { scrollable: [""], template: `systems/wrath-and-glory-revised/templates/item/types/${this.type}.hbs` },
+        effects: { scrollable: [""], template: 'systems/wrath-and-glory-revised/templates/item/item-effects.hbs' },
       }
 
     _getContextMenuOptions()
