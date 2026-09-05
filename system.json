@@ -83,7 +83,7 @@
       }
     }]
   },
-  "background" : "/modules/wng-core/assets/images/cover.webp",
+  "background" : "/system/wrath-and-glory/assets/ui/badge.webp",
   "grid": {
     "distance": 1,
     "units": "m",
