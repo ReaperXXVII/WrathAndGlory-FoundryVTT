@@ -5,3 +5,4 @@ node_modules
 foundryconfig.json
 build
 scripts/loadEffects.js
+releases
