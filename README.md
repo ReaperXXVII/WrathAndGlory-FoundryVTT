@@ -1,8 +1,6 @@
 # Wrath & Glory Revised
 A homebrew variant of the Warhammer 40k: Wrath & Glory on [Foundry VTT](https://foundryvtt.com/) **official** system.
 
-![](https://img.shields.io/github/v/release/moo-man/WrathAndGlory-FoundryVTT?label=Latest%20Version)
-![](https://img.shields.io/github/downloads/moo-man/WrathAndGlory-FoundryVTT/latest/wrath-and-glory.zip?label=Downloads%20%28Latest%20Version%29)
 ![](https://img.shields.io/badge/FoundryVTT%20Compatibility-V14-orange)
 
 ![repo-cover-wng](https://github.com/ReaperXXVII/WrathAndGlory-FoundryVTT/blob/master/static/assets/wng-r_cover.png)
