@@ -204,9 +204,9 @@ Hooks.on("preCreateItem", (item, data) => {
         if (item.type == "armour")
             img = "systems/wrath-and-glory/assets/icons/gear/armour.webp";
         if (item.type == "gear")
-            img = "systems/wrath-and-glory/assets/icons/abilities/ability-ruin.webp";
-        if (item.type == "weapon")
             img = "systems/wrath-and-glory/assets/icons/gear/gear.webp";
+        if (item.type == "weapon")
+            img = "systems/wrath-and-glory/assets/icons/gear/weapon-ranged-bolt-pistol.webp";
         if (item.type == "ammo")
             img = "systems/wrath-and-glory/assets/icons/gear/ammo.webp";
         if (item.type == "augmentic")
@@ -216,7 +216,7 @@ Hooks.on("preCreateItem", (item, data) => {
         if (item.type == "psychicPower")
             img = "systems/wrath-and-glory/assets/icons/abilities/ability-ruin.webp";
         if (item.type == "spell")
-            img = "systems/wrath-and-glory/assets/icons/abilities/ability.webp";
+            img = "systems/wrath-and-glory/assets/icons/abilities/ability-ruin.webp";
         if (item.type == "mutation")
             img = "systems/wrath-and-glory/assets/icons/abilities/fangs.webp";
         if (item.type == "keyword")
