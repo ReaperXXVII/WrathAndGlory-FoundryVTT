@@ -5,7 +5,7 @@ A homebrew variant of the Warhammer 40k: Wrath & Glory on [Foundry VTT](https://
 ![](https://img.shields.io/github/downloads/moo-man/WrathAndGlory-FoundryVTT/latest/wrath-and-glory.zip?label=Downloads%20%28Latest%20Version%29)
 ![](https://img.shields.io/badge/FoundryVTT%20Compatibility-V14-orange)
 
-![repo-cover-wng](https://user-images.githubusercontent.com/28637157/146312294-3568bd17-9556-4a66-8072-905b42d3cff7.png)
+![repo-cover-wng](https://github.com/ReaperXXVII/WrathAndGlory-FoundryVTT/blob/master/static/assets/wng-r_cover.png)
 
 ## Install
 1. Go to the setup page and choose **Game Systems**.
