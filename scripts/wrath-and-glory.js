@@ -198,7 +198,38 @@ Hooks.once("init", () => {
 
 
 });
-
+Hooks.on("preCreateItem", (item, data) => {
+  if (!data.img) {
+      let img = "systems/wrath-and-glory/assets/icons/abilities/ability.webp"
+      if (item.type == "armour")
+          img = "systems/wrath-and-glory/assets/icons/gear/armour.webp"
+      if (item.type == "gear")
+          img = "systems/wrath-and-glory/assets/icons/gear/gear.webp"
+      if (item.type == "psychicPower")
+          img = "systems/wrath-and-glory/assets/icons/abilities/ability-ruin.webp"
+      if (item.type == "spell")
+          img = "systems/wrath-and-glory/assets/icons/abilities/ability-ruin.webp"
+      if (item.type == "weapon")
+          img = "systems/wrath-and-glory/assets/icons/gear/weapon-ranged-bolt.webp"
+      if (item.type == "talent")
+          img = "systems/wrath-and-glory/assets/icons/abilities/ability.webp"
+      if (item.type == "augmentic")
+          img = "systems/wrath-and-glory/assets/icons/gear/augmentic.webp"
+      if (item.type == "ammo")
+          img = "systems/wrath-and-glory/assets/icons/gear/ammo.webp"
+      if (item.type == "ascension")
+          img = "systems/wrath-and-glory/assets/icons/abilities/skull-leader.webp"
+      if (item.type == "mutation")
+          img = "systems/wrath-and-glory/assets/icons/abilities/fangs.webp"
+      if (item.type == "weaponUpgrade")
+          img = "systems/wrath-and-glory/assets/icons/gear/gear.webp"
+      if (item.type == "keyword")
+          img = "systems/wrath-and-glory/assets/icons/factions/other/heraldry.webp"
+      if (item.type == "traumaticInjury")
+          img = "systems/wrath-and-glory/assets/icons/abilities/ability-annihilation.webp"
+      item.updateSource({ "img": img })
+  }
+});
 
 hooks()
 loadEffects();
