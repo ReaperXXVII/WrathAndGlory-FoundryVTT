@@ -1,5 +1,5 @@
 # Wrath & Glory Revised
-A homebrew variant of the Warhammer 40k: Wrath & Glory on [Foundry VTT](https://foundryvtt.com/) **official** system.
+A homebrew variant of the [Warhammer 40k: Wrath & Glory](https://github.com/moo-man/WrathAndGlory-FoundryVTT) on [Foundry VTT](https://foundryvtt.com/) **official** system.
 
 ![](https://img.shields.io/badge/FoundryVTT%20Compatibility-V14-orange)
 
