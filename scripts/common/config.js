@@ -512,6 +512,9 @@ WNG.traitEffects = {
                     label : "Accurate",
                     trigger : "dialog",
                     script : "args.fields.pool += (parseInt(this.item.traitList.accurate.rating));",
+                    options : {
+                        activateScript: "return true;"
+                    }
                 },
             ],
             }
