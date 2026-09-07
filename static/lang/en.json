@@ -535,6 +535,7 @@
   "CONDITION.Vulnerable": "Vulnerable",
   "CONDITION.Dying": "Dying",
   "CONDITION.Dead": "Dead",
+  "TRAIT.Accurate": "Accurate",
   "TRAIT.Agonising": "Agonising",
   "TRAIT.Arc": "Arc",
   "TRAIT.Assault": "Assault",
