@@ -76,6 +76,7 @@ WNG.size = {
 
 
 WNG.weaponTraits = {
+    "accurate": "TRAIT.Accurate",
     "agonising": "TRAIT.Agonising",
     "arc": "TRAIT.Arc",
     "assault": "TRAIT.Assault",
@@ -128,6 +129,7 @@ WNG.vehicleTraits = {
 
 
 WNG.traitHasRating = {
+    "accurate": true,
     "agonising": false,
     "arc": true,
     "assault": false,
@@ -500,6 +502,20 @@ WNG.systemEffects = {
 
 WNG.traitEffects = {
          // Qualities
+         accurate: {
+            name : "TRAIT.Accurate",
+            system : {
+                transferData : {
+                    documentType : "Item"
+                },
+                scriptData : [{
+                    label : "Accurate",
+                    trigger : "dialog",
+                    script : "args.fields.pool += (parseInt(this.item.traitList.accurate.rating));",
+                },
+            ],
+            }
+        },
          agonising: {
             name : "TRAIT.Agonising",
             system : {
