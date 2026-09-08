@@ -56,7 +56,7 @@ export class CombatModel extends foundry.abstract.DataModel {
         if (autoCalc.awareness)
             this.passiveAwareness.total = Math.max(Math.ceil(skills.awareness.total / 2) + this.passiveAwareness.bonus, 1);
         if (autoCalc.defence)
-            this.defence.total = Math.max(attributes.initiative.total - 1 + this.defence.bonus, 1);
+            this.defence.total = Math.max((attributes.agility.total + attributes.initiative.total - this.dodgepenalty.total ) + this.defence.bonus, 1);
         if (autoCalc.resolve)
             this.resolve.total = Math.max(attributes.willpower.total - 1, 1) + this.resolve.bonus;
         if (autoCalc.conviction)
@@ -64,7 +64,7 @@ export class CombatModel extends foundry.abstract.DataModel {
         if (autoCalc.resilience)
             this.resilience.total = Math.max(attributes.toughness.total + 1 + this.resilience.bonus + this.resilience.armour, 1);
         if (autoCalc.determination)
-            this.determination.total = Math.max(attributes[this.determination.attribute].total + this.determination.bonus, 1);
+            this.determination.total = Math.max(Math.ceil((attributes.willpower.total + attributes.toughness.total) / 2) + this.determination.bonus, 1);
 
 
         if (autoCalc.defence) {
@@ -114,8 +114,8 @@ export class AgentCombatModel extends CombatModel {
         let advances = this.parent.advances;
 
         if (autoCalc.wounds)
-            this.wounds.max = Math.max((advances.tier * 2) + attributes.toughness.total + this.wounds.bonus, 1);
+            this.wounds.max = Math.max((attributes.toughness.total * 2) + advances.rank + this.wounds.bonus, 1);
         if (autoCalc.shock)
-            this.shock.max = Math.max(attributes.willpower.total + advances.tier + this.shock.bonus, 1);
+            this.shock.max = Math.max((attributes.willpower.total * 2) + advances.rank + this.shock.bonus, 1);
     }
 }

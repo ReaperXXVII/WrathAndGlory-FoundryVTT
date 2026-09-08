@@ -15,13 +15,6 @@
                         autoCalc.resilience}}disabled{{/if}}></div>
             </div>
             <div class="attribute-box single">
-                <div class="label" style="grid-column: 1 / span 8">{{localize "HEADER.SHOCK"}}</div>
-                <div class="field" style="grid-column: 9 / span 2"><input type="number" name="system.combat.shock.value"
-                        value="{{system.combat.shock.value}}" {{#if autoCalc.shock}}disabled{{/if}}></div>
-                <div class="field" style="grid-column: 11 / span 2"><input type="number" name="system.combat.shock.max"
-                        value="{{system.combat.shock.max}}" {{#if autoCalc.shock}}disabled{{/if}}></div>
-            </div>
-            <div class="attribute-box single">
                 <div class="label" style="grid-column: 1 / span 8">{{localize "HEADER.PASSIVEAWARENESS"}}</div>
                 <div class="field" style="grid-column: 9 / span 4"><input type="number"
                         name="system.combat.passiveAwareness.total" value="{{system.combat.passiveAwareness.total}}"
@@ -58,6 +51,15 @@
                         name="system.combat.determination.total" value="{{system.combat.determination.total}}" {{#if
                         autoCalc.determination}}disabled{{/if}}></div>
             </div>
+
+            <div class="attribute-box single">
+                <div class="label" style="grid-column: 1 / span 8">{{localize "HEADER.SHOCK"}}</div>
+                <div class="field" style="grid-column: 9 / span 2"><input type="number" name="system.combat.shock.value"
+                        value="{{system.combat.shock.value}}" {{#if autoCalc.shock}}disabled{{/if}}></div>
+                <div class="field" style="grid-column: 11 / span 2"><input type="number" name="system.combat.shock.max"
+                        value="{{system.combat.shock.max}}" {{#if autoCalc.shock}}disabled{{/if}}></div>
+            </div>
+
             <div class="attribute-box single">
                 <div class="label" style="grid-column: 1 / span 8">{{localize "HEADER.WOUNDS"}}</div>
                 <div class="field" style="grid-column: 9 / span 2"><input type="number"
