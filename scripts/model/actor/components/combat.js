@@ -6,6 +6,10 @@ export class CombatModel extends foundry.abstract.DataModel {
                 bonus: new foundry.data.fields.NumberField({initial: 0}),
                 total: new foundry.data.fields.NumberField({initial: 0})
             }),
+            dodgepenalty: new foundry.data.fields.SchemaField({
+                bonus: new foundry.data.fields.NumberField({initial: 0}),
+                total: new foundry.data.fields.NumberField({initial: 0})
+            }),
             resilience: new foundry.data.fields.SchemaField({
                 bonus: new foundry.data.fields.NumberField({initial: 0}),
                 total: new foundry.data.fields.NumberField({initial: 0})
@@ -30,6 +34,10 @@ export class CombatModel extends foundry.abstract.DataModel {
                 total: new foundry.data.fields.NumberField({initial: 0})
             }),
             conviction: new foundry.data.fields.SchemaField({
+                bonus: new foundry.data.fields.NumberField({initial: 0}),
+                total: new foundry.data.fields.NumberField({initial: 0})
+            }),
+            encumbrance: new foundry.data.fields.SchemaField({
                 bonus: new foundry.data.fields.NumberField({initial: 0}),
                 total: new foundry.data.fields.NumberField({initial: 0})
             }),

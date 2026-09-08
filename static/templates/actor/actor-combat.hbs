@@ -9,6 +9,12 @@
                         autoCalc.defence}}disabled{{/if}}></div>
             </div>
             <div class="attribute-box single">
+                <div class="label" style="grid-column: 1 / span 8">{{localize "HEADER.DODGEPENALTY"}}</div>
+                <div class="field" style="grid-column: 9 / span 4"><input type="number"
+                        name="system.combat.dodgepenalty.total" value="{{system.combat.dodgepenalty.total}}" {{#if
+                        autoCalc.defence}}disabled{{/if}}></div>
+            </div>
+            <div class="attribute-box single">
                 <div class="label" style="grid-column: 1 / span 8">{{localize "HEADER.RESILIENCE"}}</div>
                 <div class="field" style="grid-column: 9 / span 4"><input type="number"
                         name="system.combat.resilience.total" value="{{system.combat.resilience.total}}" {{#if
@@ -32,6 +38,13 @@
                         {{selectOptions (config "size") selected=source.system.combat.size}}
                     </select>
                 </div>
+            </div>
+            <div class="attribute-box single">
+                <div class="label" style="grid-column: 1 / span 8">{{localize "HEADER.ENCUMBRANCE"}}</div>
+                <div class="field" style="grid-column: 9 / span 2"><input type="number" name="system.combat.encumbrance.value"
+                        value="{{system.combat.encumbrance.value}}" {{#if autoCalc.encumbrance}}disabled{{/if}}></div>
+                <div class="field" style="grid-column: 11 / span 2"><input type="number" name="system.combat.encumbrance.max"
+                        value="{{system.combat.encumbrance.max}}" {{#if autoCalc.encumbrance}}disabled{{/if}}></div>
             </div>
             <div class="attribute-box single">
                 <div class="label" style="grid-column: 1 / span 4">{{localize "HEADER.SPEED"}}</div>
