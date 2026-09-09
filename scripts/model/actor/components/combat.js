@@ -58,23 +58,35 @@ export class CombatModel extends foundry.abstract.DataModel {
         let attributes = actor.system.attributes;
         let skills = actor.system.skills;
         let autoCalc = this.parent.settings.autoCalc;
-
+    
         this.computeArmour(actor.itemTypes.armour, attributes);
-
+    
         if (autoCalc.awareness)
             this.passiveAwareness.total = Math.max(Math.ceil(skills.awareness.total / 2) + this.passiveAwareness.bonus, 1);
-        if (autoCalc.defence)
-            this.defence.total = Math.max((attributes.agility.total + attributes.initiative.total - this.dodgepenalty.total ) + this.defence.bonus, 1);
+    
+        if (autoCalc.defence) {
+            if (game.settings.get("wrath-and-glory", "originalautocalcOption"))
+                this.defence.total = Math.max(attributes.initiative.total - 1 + this.defence.bonus, 1);
+            else
+                this.defence.total = Math.max((attributes.agility.total + attributes.initiative.total - this.dodgepenalty.total) + this.defence.bonus, 1);
+        }
+    
         if (autoCalc.resolve)
             this.resolve.total = Math.max(attributes.willpower.total - 1, 1) + this.resolve.bonus;
+    
         if (autoCalc.conviction)
             this.conviction.total = Math.max(attributes.willpower.total + this.conviction.bonus, 1);
+    
         if (autoCalc.resilience)
             this.resilience.total = Math.max(attributes.toughness.total + 1 + this.resilience.bonus + this.resilience.armour, 1);
-        if (autoCalc.determination)
-            this.determination.total = Math.max(Math.ceil((attributes.willpower.total + attributes.toughness.total) / 2) + this.determination.bonus, 1);
 
-
+        if (autoCalc.determination) {
+            if (game.settings.get("wrath-and-glory", "originalautocalcOption"))
+                this.determination.total = Math.max(attributes[this.determination.attribute].total + this.determination.bonus, 1);
+            else
+                this.determination.total = Math.max(Math.ceil((attributes.willpower.total + attributes.toughness.total) / 2) + this.determination.bonus, 1);
+        }
+    
         if (autoCalc.defence) {
             if (this.size == "small") {
                 this.defence.total += 1
@@ -121,9 +133,18 @@ export class AgentCombatModel extends CombatModel {
 
         let advances = this.parent.advances;
 
-        if (autoCalc.wounds)
-            this.wounds.max = Math.max((attributes.toughness.total * 2) + advances.rank + this.wounds.bonus, 1);
-        if (autoCalc.shock)
-            this.shock.max = Math.max((attributes.willpower.total * 2) + advances.rank + this.shock.bonus, 1);
+		if (autoCalc.wounds) {
+			if (game.settings.get("wrath-and-glory", "originalautocalcOption"))
+				this.wounds.max = Math.max((advances.tier * 2) + attributes.toughness.total + this.wounds.bonus, 1);
+			else
+				this.wounds.max = Math.max((attributes.toughness.total * 2) + advances.rank + this.wounds.bonus, 1);
+		}
+
+		if (autoCalc.shock) {
+			if (game.settings.get("wrath-and-glory", "originalautocalcOption"))
+				this.shock.max = Math.max(attributes.willpower.total + advances.tier + this.shock.bonus, 1);
+			else
+				this.shock.max = Math.max((attributes.willpower.total * 2) + advances.rank + this.shock.bonus, 1);
+		}
     }
 }
