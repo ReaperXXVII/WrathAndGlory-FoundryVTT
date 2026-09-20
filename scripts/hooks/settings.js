@@ -11,6 +11,15 @@ export default function () {
     type: String,
   });
 
+  game.settings.register('wrath-and-glory', 'originalautocalcOption', {
+    name: 'Original Auto Calculation',
+    hint: 'Changes the character traits auto calculations to use the original version.',
+    scope: 'world',
+    config: true,
+    default: false,
+    type: Boolean,
+  });
+
   game.settings.register('wrath-and-glory', 'initiativeRollOption', {
     name: 'I Wanna Roll!',
     hint: 'Determine Initiative by rolling as described on page 177 in the Core Rulebook',

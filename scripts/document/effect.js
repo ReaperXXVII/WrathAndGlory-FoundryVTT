@@ -184,6 +184,7 @@ export default class WrathAndGloryEffect extends WarhammerActiveEffect {
             }
         })).concat([
             {value: "system.combat.defence.bonus", label: game.i18n.localize("HEADER.DEFENCE"), group: "Other"},
+            {value: "system.combat.dodgepenalty.bonus", label: game.i18n.localize("HEADER.DODGEPENALTY"), group: "Other"},
             {value: "system.combat.resilience.bonus", label: game.i18n.localize("HEADER.RESILIENCE"), group: "Other"},
             {value: "system.combat.wounds.bonus", label: game.i18n.localize("HEADER.WOUNDS"), group: "Other"},
             {value: "system.combat.determination.bonus", label: game.i18n.localize("HEADER.DETERMINATION"), group: "Other"},
@@ -192,6 +193,7 @@ export default class WrathAndGloryEffect extends WarhammerActiveEffect {
             {value: "system.combat.conviction.bonus", label: game.i18n.localize("HEADER.CONVICTION"), group: "Other"},
             {value: "system.combat.passiveAwareness.bonus", label: game.i18n.localize("HEADER.PASSIVEAWARENESS"), group: "Other"},
             {value: "system.combat.resilience.bonus", label: game.i18n.localize("HEADER.RESILIENCE"), group: "Other"},
+            {value: "system.combat.encumbrance.bonus", label: game.i18n.localize("HEADER.ENCUMBRANCE"), group: "Other"},
             {value: "system.combat.speed", label: game.i18n.localize("HEADER.SPEED"), group: "Other"},
             {value: "system.combat.fly", label: game.i18n.localize("HEADER.SPEED_FLY"), group: "Other"},
             {value: "system.resources.faith.total", label: game.i18n.localize("RESOURCE.FAITH"), group: "Other"},
